@@ -1,0 +1,10 @@
+
+
+<div>
+    {%- for locutor in collections.locutor -%}
+        {% if locutor %}
+            <a href="{{ locutor.url }}">{{ locutor.data.title }}{{ locutor.data.date }}</a>
+        {% endif %}
+    {%- endfor -%}
+</div>
+

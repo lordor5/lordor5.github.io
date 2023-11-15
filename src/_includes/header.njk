@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/variables.css">
 <header class="page-header">
   <div class="container">
     <div class="page-header__content">
@@ -20,3 +21,32 @@
     </div>
   </div>
 </header>
+
+
+<style>
+  .page-header {
+    padding: 2em 0;
+    background: var(--clr-primary-400);
+  }
+  
+  .page-header__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list a {
+    color: var(--clr-neutral-900);
+    text-decoration: none;
+  }
+  
+  .nav-list a:focus,
+  .nav-list a:hover {
+    color: var(--clr-primary-400);
+    text-decoration: underline;
+  }
+</style>
