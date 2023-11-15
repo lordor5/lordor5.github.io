@@ -1,7 +1,11 @@
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+
 module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy('./src/css');
     eleventyConfig.addPassthroughCopy('./src/assets');
+
+    eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
     // Return your Object options:
     return {
@@ -10,4 +14,4 @@ module.exports = function(eleventyConfig) {
         output: 'www',
       }
     }
-  };
+};
