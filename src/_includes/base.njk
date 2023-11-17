@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ "/css/style.css" | htmlBaseUrl }}">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/variables.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8110537843119022" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
@@ -31,21 +31,32 @@
 
 </head>
 <body>
-{% include 'header.njk' %}´
-<main>
+{% include 'header.njk' %}
+<main class="main">
 
     {{ content | safe }}
-
-    {% include 'navigation.njk' %}
 
 </main>
 {% include 'footer.njk' %}
 </body>
 </html>
 
+
 <style>
 main {
-    margin: 10%;
+    margin: 20%;
+}
+body {
+margin:0
+min-height: 100vh;
+text-rendering: optimizeSpeed;
+line-height: 1.5;
+}
+
+pre {
+  background: #ccc;
+  border-radius: 10px;
+  white-space: pre-line;
 }
 
 </style>
