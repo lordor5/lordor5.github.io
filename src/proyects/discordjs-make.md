@@ -11,4 +11,6 @@ draft: true
     
     >> [Como alojar un bot de discord](../discordjs-host)
 
-# How to make a discord bot
+# Como hacer un bot de discord
+
+Lo primer oque tienes que hacer es registrar el bot https://discord.com/developers/applications?new_application=true
