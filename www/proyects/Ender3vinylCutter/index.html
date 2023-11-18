@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locutor</title>
+    <title>Ender 3 cortador</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/variables.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8110537843119022" crossorigin="anonymous"></script>
@@ -76,45 +76,38 @@
 </style>
 <main class="main">
 
-    <!--
-    << [Crear un bot de discord](../discordjs-make) 
-    
-    >> [Como alojar un bot de discord](../discordjs-host)
--->
-<h1>Locutor</h1>
-<p>Locutor es un bot de discord que envia una notificacion si algien se conecta en un canal de voz. Para que si alguien quiere jugar o hablar, que sepa que tu tambien quieres.</p>
-<p>Esta guia supone que vienes de <a href="../discordjs-make">Crear un bot de discord</a>.</p>
-<h2>Configuracion</h2>
-<h3>1 Canal de texto</h3>
-<p>crea un canal de texto que se llame &quot;conexiones&quot; o lo que definas en esta linea</p>
-<pre><code>  // Find the voice channel by name
-  const textChannel = client.channels.cache.find(channel =&gt; channel.name === 'conexiones');
-</code></pre>
-<p><img src="/assets/locutor/canal.JPG" alt="asi queda el canal de texto"></p>
-<h3>2 Rol</h3>
-<p>Despues tienes que crear un rol llamado &quot;locutor&quot; y asignarlo al canal que has creado antes y a los usuarios que quieran recibir la notificacion.</p>
-<p>Para ello ve a la configuracion del servidor</p>
-<p><img src="/assets/locutor/ConfiguracionServidor.JPG" alt="Accede a la configuracion del servidor"></p>
-<p><img src="/assets/locutor/AjustesDelServidor.JPG" alt="Ajustes del servidor"></p>
-<p>Ahora vamos a crear el rol, para ello acedemos al apartado de roles y creamos el rol con el nombre que quieras en mi caso, lo voy a nombrar locutor</p>
-<p><img src="/assets/locutor/CrearRol.JPG" alt="Accede a la configuracion del servidor"></p>
-<p><img src="/assets/locutor/RolCreado.JPG" alt="Accede a la configuracion del servidor"></p>
-<p>Ahora queda configurar el canal con los permisos, para ello accedemos a los ajustes del canal, y en el partado permisos, añadimos:</p>
+    <p>Si lees este articulo, supongo que ya has leido el de [modificar el hotend de una impresora ender 3]</p>
+<h1>Cómo añadir a tu Ender 3 en un cortador de vinilos</h1>
+<p>Las impresoras 3D son cada vez más versátiles y capaces de realizar una amplia variedad de tareas. Una interesante es el corte de vinilos. Con un poco de ingenio y algunos componentes adicionales, puedes convertir tu Ender 3 en un cortador de vinilos.</p>
+<p>¿Qué necesitas?</p>
+<p>Para convertir tu Ender 3 en un cortador de vinilos, necesitarás los siguientes componentes:</p>
+<p>El cortador de vinilos que puedes comprar <a href="https://s.click.aliexpress.com/e/_Dl4Ap6R">aqui</a>
+Un archivo STL para el soporte del cortador de vinilos. <a href="https://www.printables.com/es/model/584969-cr-touch-vinyl-cutter-and-long-nozzle-for-ender-3">Este uso yo</a>
+Un trozo de carton pluma o similar para proteger la cama de la impresora.
+Pinzas para que el carton pluma no se mueva.
+Un juego de herramientas básicas, que vienen con la Ender 3.</p>
+<h2>Instrucciones</h2>
 <ul>
-<li>Bot -&gt; puede ver canal y enviar mensajes</li>
-<li>locutor (rol) -&gt; puede ver canal</li>
-<li>@everyone -&gt; no puede ver el canal ni nada</li>
+<li>Imprime el archivo STL del soporte del cortador de vinilos.</li>
+<li>Una vez impreso, monta el soporte en la impresora.</li>
+<li>Instala la cuchilla en el soporte.</li>
+<li>Calibra el cortador de vinilos.</li>
 </ul>
-<p><img src="/assets/locutor/Canal.JPG" alt="Accedemos a los ajustes del canal"></p>
-<p>Asi tienen que quedar los permisos:</p>
-<p>Para el bot: abajo hay que marcar la opcion enviar mensajes</p>
-<p><img src="/assets/locutor/PermisosBotLocutor.JPG" alt="asi quedan los permisos del bot"></p>
-<p>Los permisos del rol &quot;locutor&quot;</p>
-<p><img src="/assets/locutor/PermisosLocutor.JPG" alt="asi quedan los permisos del bot del rol"></p>
-<p>Para @everyone</p>
-<p><img src="/assets/locutor/PermisosEveryone.JPG" alt="asi quedan los permisos para el resto"></p>
-<h3>Por ultimo</h3>
-<p>Para que este bot sea mas util, tendras que intalarte la aplicacion de discor en el movil.</p>
+<p>Una vez instalado, debes regular la altura del cortador de vinilos. Debe de estar un poco mas alto que la boquilla de la impresora pero a la vez, la cuchilla debe de quedar mas baja que la boquilla de la impresora. De esta forma, puedes imprimir en 3D si quitas la cuchilla, y si la dejas puestas, puedes cortar.</p>
+<p>La calibración del cortador de vinilos es esencial para obtener cortes precisos. Para calibrarlo, sigue estos pasos:</p>
+<p>Coloca un trozo de papel de prueba sobre la cama de impresión.
+Baja el cabezal de impresión hasta que la cuchilla toque el papel.
+Ajusta la altura del cabezal de impresión hasta que la cuchilla corte el papel sin rasgarlo.</p>
+<h2>Uso del cortador de vinilos</h2>
+<p>Una vez que el cortador de vinilos esté calibrado, ya puedes empezar a usarlo. Para cortar un diseño de vinilo, sigue estos pasos:</p>
+<p>Abre el diseño de vinilo en un software de diseño gráfico.
+Exporta el diseño como un archivo SVG o DXF.
+Abre el archivo SVG o DXF en un software de slicing.
+Configura el software de slicing para cortar vinilo.
+Imprime el diseño.</p>
+<h2>Consejos</h2>
+<p>Vigila la cuchilla, s icortas materiales muy gordos se puede dañar y ya no cortara bien.</p>
+<p>No sobrecargues el cortador de vinilos. Lo puedes usar para cortar materiales mas gordos pero tendras que hacer varias pasadas.</p>
 
 
 </main>
