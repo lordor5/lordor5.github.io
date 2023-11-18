@@ -81,6 +81,72 @@
     
     >> [Como alojar un bot de discord](../discordjs-host)
 -->
+<h1>Cómo crear un bot de Discord</h1>
+<p>Discord es una plataforma de comunicación popular que permite a los usuarios crear servidores para chatear, jugar y colaborar. Los bots de Discord son aplicaciones que se pueden usar para automatizar tareas, proporcionar información o simplemente entretener a los usuarios. En esta guia, vas a aprender a hacer un bot que notifica cuando alguien se conecta a un canal de voz.</p>
+<p>Si estás interesado en crear tu propio bot de Discord, este artículo te guiará a través del proceso paso a paso.</p>
+<h4>Paso 1: Activar el modo desarrollador</h4>
+<p>El primer paso es activar el modo desarrollador en tu cuenta de Discord. Para ello, sigue estos pasos:</p>
+<p>Selecciona &quot;Configuración&quot; en la esquina inferior izqierda.</p>
+<p>Haz clic en &quot;Avanzado&quot;.</p>
+<p>Activa la opción &quot;Modo desarrollador&quot;.</p>
+<h4>Paso 2: Crear una aplicación</h4>
+<p>Una vez que hayas activado el modo desarrollador, puedes crear una aplicación para tu bot. Para ello, sigue estos pasos:</p>
+<p>Visita el portal de <a href="https://discord.com/developers/applications?new_application=true">desarrolladores de Discord</a>.</p>
+<p>Dale a tu aplicación un nombre, y haz clic en &quot;Crear&quot;.</p>
+<h4>Paso 3: Agregar un bot</h4>
+<p>Una vez que hayas creado tu aplicación, puedes agregar tu bot a un servidor de discord. Para ello, sigue estos pasos:</p>
+<p>Haz clic en &quot;Bots&quot; en la barra lateral izquierda.</p>
+<p>Haz clic en &quot;Agregar bot&quot;.</p>
+<h4>Paso 4: Obtener el token de tu bot</h4>
+<p>Para que tu bot pueda interactuar con Discord, necesitarás su token. Para obtener el token de tu bot, sigue estos pasos:</p>
+<p>Haz clic en &quot;Bots&quot; en la barra lateral izquierda.</p>
+<p>Haz clic en el nombre de tu bot.</p>
+<p>Haz clic en &quot;Configuración&quot;.</p>
+<p>En la sección &quot;Avanzado&quot;, encontrarás el token de tu bot.</p>
+<h4>Paso 5: Desarrollar tu bot</h4>
+<p>Para empezar, crea una carpeta en tu ordenador donde van a estar todos los archivos del bot.</p>
+<p>Instala node.js</p>
+<p>Instala discord.js con</p>
+<pre><code class="language-js">npm install discord.js
+</code></pre>
+<p>Despues, crea un archivo index.js</p>
+<p>Y copia <a href="https://github.com/lordor5/Locutor/blob/main/index.js">esto</a></p>
+<p>Este codigo envia una notifiacion por el canal &quot;conexiones&quot; cuando alguien se mete en un canal de voz</p>
+<p>Deberas poner el token que has copiado antes en un archivo que se llama config.json</p>
+<h4>Paso 7: Agregar tu bot a un servidor</h4>
+<p>Una vez que hayas alojado tu bot, puedes agregarlo a un servidor. Para ello, sigue estos pasos:</p>
+<p>Haz clic en el nombre del servidor al que quieres agregar tu bot.
+Haz clic en &quot;Invitaciones a bots&quot;.
+Copia el enlace de invitación de tu bot.
+Pega el enlace de invitación en el chat del servidor y haz clic en &quot;Enviar&quot;.</p>
+<p>¡Ya está!</p>
+<p>Ahora que has creado tu propio bot de Discord, puedes empezar a usarlo para automatizar tareas, proporcionar información o simplemente entretener a los usuarios.</p>
+<p>Consejos adicionales</p>
+<p>Cuando estés desarrollando tu bot, asegúrate de probarlo a fondo para asegurarte de que funciona correctamente.
+Utiliza la documentación de Discord API para obtener información sobre cómo usar la API de Discord.
+Únete a la comunidad de desarrollo de bots de Discord para obtener ayuda y apoyo.
+Ideas para tu bot</p>
+<p>Aquí hay algunas ideas para tu bot de Discord:</p>
+<p>Un bot que proporcione información, como noticias, resultados deportivos o el clima.
+Un bot que juegue juegos con los usuarios.
+Un bot que ayude a los usuarios a organizarse, como un bot de calendario o un bot de tareas.
+Un bot que simplemente haga reír a los usuarios.
+El cielo es el límite cuando se trata de crear un bot de Discord.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>40d481baa1f3d03c015227bdee0851464bf7364a</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <h1>Locutor</h1>
 <p>Locutor es un bot de discord que envia una notificacion si algien se conecta en un canal de voz. Para que si alguien quiere jugar o hablar, que sepa que tu tambien quieres.</p>
 <p>Esta guia supone que vienes de <a href="../discordjs-make">Crear un bot de discord</a>.</p>
@@ -422,6 +488,7 @@ section,
 <style>
 main {
     margin: 20%;
+    margin-bottom: 0;
 }
 body {
 margin:0;
