@@ -25,15 +25,18 @@ Una forma de mejorar el rendimiento de la Ender 3 es cambiar el hotend por uno d
 
 En este artículo, veremos cómo cambiar el hotend de una Ender 3 por un hotend de cobre.
 
-Materiales necesarios
+## Materiales necesarios
 
-[Hotend de cobre](https://s.click.aliexpress.com/e/_Deyir7D)
+- [Hotend de cobre](https://s.click.aliexpress.com/e/_Deyir7D)
+- Herraminetas que vienen con la impresora y las que vienen con el hotend
 
-Apaga la impresora 3D y desconecta la alimentación.
-Retira la cubierta del cabezal de la impresora 3D.
-Desenrosca los tornillo que sujeta el bloque de calentamiento al hotend.
-Monta el nuevo hotend.
-Atornilla el bloque de calentamiento al hotend.
-Vuelve a colocar la cubierta de la impresora 3D.
-Enciende la impresora 3D y comprueba que el hotend funciona correctamente.
-Instrucciones detalladas
+## Pasos a realizar
+
+- Apaga la impresora 3D y desconecta la alimentación.
+- Retira la cubierta del cabezal de la impresora 3D.
+- Desenrosca los tornillo que sujeta el bloque.
+- Monta el nuevo hotend conectando el termistor y el calentador.
+- Vuelve a colocar la cubierta del cabezal de la impresora 3D.
+- Enciende la impresora 3D y comprueba que el hotend funciona correctamente.
+
+Debras recalibrar la impresora para que sepa que tiene un hotend mas halto, pare aso tienes que apretar los tornillos de la cama caliente.
