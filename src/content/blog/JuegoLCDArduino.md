@@ -4,6 +4,8 @@ pubDate: '2018-02'
 description: 'Un juego sencillo de conducción programado para un Arduino Nano conectado a una pantalla LCD 16x2.'
 ---
 
+<RelatedArticles tags={content.tags} currentPathname={canonicalURL.pathname} />
+
 # Juego con una LCD16x2 y un Arduino nano
 
 
