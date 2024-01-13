@@ -10,14 +10,14 @@ import FormattedDate from '../components/FormattedDate.astro';
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
-
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<link rel="sitemap" href="/sitemap-index.xml" />
+		<meta name="google-site-verification" content="VM1Kwhex-oPdqFwSmiVbUU2VD3SxV0CE-A7gW4orFV0" />
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
