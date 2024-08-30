@@ -6,6 +6,6 @@ import robots from "astro-robots";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://lordor.es',
+  site: 'https://github.lordor.es',
   integrations: [mdx(), sitemap(), robots()]
 });
