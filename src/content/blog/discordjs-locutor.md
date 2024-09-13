@@ -1,16 +1,15 @@
 ---
-title: 'Locutor'
-description: 'Un bot para discord que envía una notificación cuando alguien se conecta a un canal de voz'
-pubDate: '2023-10'
-heroImage: '/blog-placeholder-3.jpg'
+title: "Locutor"
+description: "Un bot para discord que envía una notificación cuando alguien se conecta a un canal de voz"
+pubDate: "2023-10"
+heroImage: "/blog-placeholder-3.jpg"
 ---
 
 <!--
-    << [Crear un bot de discord](../discordjs-make) 
-    
+    << [Crear un bot de discord](../discordjs-make)
+
     >> [Como alojar un bot de discord](../discordjs-host)
 -->
-
 
 # Cómo crear un bot de Discord
 
@@ -18,18 +17,15 @@ Discord es una plataforma de comunicación popular que permite a los usuarios cr
 
 Si estás interesado en crear tu propio bot de Discord, este artículo te guiará a través del proceso paso a paso.
 
-
 #### Paso 1: Activar el modo desarrollador
 
 El primer paso es activar el modo desarrollador en tu cuenta de Discord. Para ello, sigue estos pasos:
-
 
 Selecciona "Configuración" en la esquina inferior izquierda.
 
 Haz clic en "Avanzado".
 
 Activa la opción "Modo desarrollador".
-
 
 #### Paso 2: Crear una aplicación
 
@@ -39,8 +35,6 @@ Visita el portal de [desarrolladores de Discord](https://discord.com/developers/
 
 Dale a tu aplicación un nombre, y haz clic en "Crear".
 
-
-
 #### Paso 3: Agregar un bot
 
 Una vez que hayas creado tu aplicación, puedes agregar tu bot a un servidor de discord. Para ello, sigue estos pasos:
@@ -48,7 +42,6 @@ Una vez que hayas creado tu aplicación, puedes agregar tu bot a un servidor de 
 Haz clic en "Bots" en la barra lateral izquierda.
 
 Haz clic en "Agregar bot".
-
 
 #### Paso 4: Obtener el token de tu bot
 
@@ -74,7 +67,6 @@ Instala discord.js con
 npm install discord.js
 ```
 
-
 Después, crea un archivo index.js
 
 Y copia [esto](https://github.com/lordor5/Locutor/blob/main/index.js)
@@ -82,7 +74,6 @@ Y copia [esto](https://github.com/lordor5/Locutor/blob/main/index.js)
 Este código envía una notificación por el canal "conexiones" cuando alguien se mete en un canal de voz
 
 Deberás poner el token que has copiado antes en un archivo que se llama config.json
-
 
 #### Paso 7: Agregar tu bot a un servidor
 
@@ -112,19 +103,13 @@ Un bot que ayude a los usuarios a organizarse, como un bot de calendario o un bo
 Un bot que simplemente haga reír a los usuarios.
 El cielo es el límite cuando se trata de crear un bot de Discord.
 
-
-
 # Locutor
-
 
 Locutor es un bot de discord que envía una notificación si alguien se conecta en un canal de voz. Para que si alguien quiere jugar o hablar, que sepa que tu también quieres.
 
 Esta guía supone que vienes de [Crear un bot de discord](../discordjs-make).
 
-
 ## Configuración
-
-
 
 ### 1 Canal de texto
 
@@ -137,19 +122,13 @@ crea un canal de texto que se llame "conexiones" o lo que definas en esta linea
 
 ![asi queda el canal de texto](/locutor/Canal.JPG)
 
-
-
 ### 2 Rol
 
 Después tienes que crear un rol llamado "locutor" y asignarlo al canal que has creado antes y a los usuarios que quieran recibir la notificación.
 
-
 Para ello ve a la configuración del servidor
 
 ![Accede a la configuración del servidor](/locutor/ConfiguracionServidor.JPG)
-
-
-
 
 ![Ajustes del servidor](/locutor/AjustesDelServidor.JPG)
 
@@ -159,24 +138,19 @@ Ahora vamos a crear el rol, para ello acedemos al apartado de roles y creamos el
 
 ![Accede a la configuración del servidor](/locutor/RolCreado.JPG)
 
-
 Ahora queda configurar el canal con los permisos, para ello accedemos a los ajustes del canal, y en el parado permisos, añadimos:
 
 - Bot -> puede ver canal y enviar mensajes
 - locutor (rol) -> puede ver canal
 - @everyone -> no puede ver el canal ni nada
 
-
 ![Accedemos a los ajustes del canal](/locutor/Canal.JPG)
-
-
 
 Asi tienen que quedar los permisos:
 
 Para el bot: abajo hay que marcar la opción enviar mensajes
 
 ![asi quedan los permisos del bot](/locutor/PermisosBotLocutor.JPG)
-
 
 Los permisos del rol "locutor"
 
@@ -185,8 +159,6 @@ Los permisos del rol "locutor"
 Para @everyone
 
 ![asi quedan los permisos para el resto](/locutor/PermisosEveryone.JPG)
-
-
 
 ### Por ultimo
 

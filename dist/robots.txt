@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # crawling rule(s) for above bots
-Sitemap: https://lordor.es/sitemap-index.xml
+Sitemap: https://lordor5.github.io/sitemap-index.xml

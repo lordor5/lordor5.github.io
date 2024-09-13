@@ -1,11 +1,9 @@
 ---
-title: 'Ender 3 cortador'
-pubDate: '2023-10'
-description: 'Un bot para discord que envía una notificación cuando alguien se conecta a un canal de voz'
-heroImage: '/blog-placeholder-1.jpg'
+title: "Ender 3 cortador"
+pubDate: "2023-10"
+description: "Un bot para discord que envía una notificación cuando alguien se conecta a un canal de voz"
+heroImage: "/VinylCutter/Cutter.jpg"
 ---
-
-
 
 Si lees este articulo, supongo que ya has leido el de [modificar el hotend de una impresora ender 3]
 
@@ -23,8 +21,6 @@ Un trozo de carton pluma o similar para proteger la cama de la impresora.
 Pinzas para que el carton pluma no se mueva.
 Un juego de herramientas básicas, que vienen con la Ender 3.
 
-
-
 ## Instrucciones
 
 - Imprime el archivo STL del soporte del cortador de vinilos.
@@ -34,13 +30,11 @@ Un juego de herramientas básicas, que vienen con la Ender 3.
 
 Una vez instalado, debes regular la altura del cortador de vinilos. Debe de estar un poco mas alto que la boquilla de la impresora pero a la vez, la cuchilla debe de quedar mas baja que la boquilla de la impresora. De esta forma, puedes imprimir en 3D si quitas la cuchilla, y si la dejas puestas, puedes cortar.
 
-
 La calibración del cortador de vinilos es esencial para obtener cortes precisos. Para calibrarlo, sigue estos pasos:
 
 Coloca un trozo de papel de prueba sobre la cama de impresión.
 Baja el cabezal de impresión hasta que la cuchilla toque el papel.
 Ajusta la altura del cabezal de impresión hasta que la cuchilla corte el papel sin rasgarlo.
-
 
 ## Uso del cortador de vinilos
 
@@ -52,10 +46,8 @@ Abre el archivo SVG o DXF en un software de slicing.
 Configura el software de slicing para cortar vinilo.
 Imprime el diseño.
 
-
 ## Consejos
 
 Vigila la cuchilla, s icortas materiales muy gordos se puede dañar y ya no cortara bien.
 
 No sobrecargues el cortador de vinilos. Lo puedes usar para cortar materiales mas gordos pero tendras que hacer varias pasadas.
-
